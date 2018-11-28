@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12797" started-at="2018-11-28T16:57:09Z" finished-at="2018-11-28T16:57:22Z">
+  <suite name="Default suite" duration-ms="3371" started-at="2018-11-28T17:09:47Z" finished-at="2018-11-28T17:09:50Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12797" started-at="2018-11-28T16:57:09Z" finished-at="2018-11-28T16:57:22Z">
+    <test name="Default test" duration-ms="3371" started-at="2018-11-28T17:09:47Z" finished-at="2018-11-28T17:09:50Z">
       <class name="LaunchBrowser">
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:LaunchBrowser@7dc7cbad]" name="beforeClass" is-config="true" duration-ms="10901" started-at="2018-11-28T16:57:09Z" finished-at="2018-11-28T16:57:20Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:LaunchBrowser@7dc7cbad]" name="beforeClass" is-config="true" duration-ms="1492" started-at="2018-11-28T17:09:47Z" finished-at="2018-11-28T17:09:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="verifySearchButton()[pri:0, instance:LaunchBrowser@7dc7cbad]" name="verifySearchButton" duration-ms="1787" started-at="2018-11-28T16:57:20Z" finished-at="2018-11-28T16:57:22Z">
+        <test-method status="PASS" signature="verifySearchButton()[pri:0, instance:LaunchBrowser@7dc7cbad]" name="verifySearchButton" duration-ms="1775" started-at="2018-11-28T17:09:49Z" finished-at="2018-11-28T17:09:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifySearchButton -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:LaunchBrowser@7dc7cbad]" name="afterClass" is-config="true" duration-ms="90" started-at="2018-11-28T16:57:22Z" finished-at="2018-11-28T16:57:22Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:LaunchBrowser@7dc7cbad]" name="afterClass" is-config="true" duration-ms="77" started-at="2018-11-28T17:09:50Z" finished-at="2018-11-28T17:09:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->

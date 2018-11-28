@@ -16,7 +16,7 @@ public class LaunchBrowser {
   
   @BeforeClass
   public void beforeClass() {
-	  System.setProperty("webdriver.chrome.driver", "/home/kapil/eclipse/drivers/chromedriver");
+	  System.setProperty("webdriver.chrome.driver", "/home/kapil/workspace/TestNGWithSelenium/drivers/chromedriver");
 	  driver = new ChromeDriver();
 	  
   }
