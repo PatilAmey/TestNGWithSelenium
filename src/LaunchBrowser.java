@@ -11,33 +11,38 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
 public class LaunchBrowser {
+
+	private WebDriver driver;
+
+	@BeforeClass
 	
-  private WebDriver driver;
-  
-  @BeforeClass
-  public void beforeClass() {
-	  System.setProperty("webdriver.chrome.driver", "/home/kapil/workspace/TestNGWithSelenium/drivers/chromedriver");
-	  driver = new ChromeDriver();
-	  
-  }
+	//launching the driver
+	public void beforeClass() {
+		System.setProperty("webdriver.chrome.driver", "/home/kapil/workspace/TestNGWithSelenium/drivers/chromedriver");
+		driver = new ChromeDriver();
 
-  @AfterClass
-  public void afterClass() {
-	  
-	  driver.quit();
-  }
-  @Test
-  public void verifySearchButton() {
+	}
+    
+	//closing the driver
+	@AfterClass
+	public void afterClass() {
 
-      driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.quit();
+	}
 
-      driver.get("http://www.google.com");
+	//verify search button
+	@Test
+	public void verifySearchButton() {
 
-      String search_text = "Google Search";
-      WebElement search_button = driver.findElement(By.name("btnK"));
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-      String text = search_button.getAttribute("value");
+		driver.get("http://www.google.com");
 
-      Assert.assertEquals(text, search_text, "Text not found!");
-  }
+		String search_text = "Google Search";
+		WebElement search_button = driver.findElement(By.name("btnK"));
+
+		String text = search_button.getAttribute("value");
+
+		Assert.assertEquals(text, search_text, "Text not found!");
+	}
 }
